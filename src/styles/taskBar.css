@@ -1,0 +1,147 @@
+.addTask {
+    width: 30%;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid gainsboro;
+}
+
+.addTask > .tasks {
+    padding-left: 20px;
+}
+
+.plus {
+    width: 10%;
+    text-align: center;
+    border-left: 1px solid gainsboro;
+}
+
+.taskContainer.open{
+    width: 30%;
+    margin: 30px auto;
+    min-height: 60vh;
+    background: rgb(214, 239, 241);
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.taskContainer.close{
+    display: none;
+}
+
+.taskDescription {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon {
+    padding: 12px;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.taskDescription > div {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    margin: auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.taskDescription > div > input {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.taskDetails {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.details {
+    width: 48%;
+}
+
+.date,
+.time {
+    display: flex;
+    background: #fff;
+    margin: auto;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.time > input,
+.date > input {
+    border: none;
+    width: 75%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.assignUser {
+    width: 91%;
+    margin: 0 auto;
+}
+
+.assignUser > input {
+    border: none;
+    outline: none;
+    width: 94%;
+    padding: 14px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.taskBtn {
+    margin: 20px auto;
+    width: 91%;
+    text-align: end;
+}
+
+.saveBtn {
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.saveBtn:hover {
+    background: rgba(0, 128, 0, 0.493);
+}
+
+.cancelBtn {
+    margin-right: 10px;
+    background: inherit;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.cancelBtn:hover {
+    background: red;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+@media screen  and (max-width: 768px) {
+    .addTask, .taskContainer.open {
+        width: 70%;
+    }   
+}

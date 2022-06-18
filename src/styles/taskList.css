@@ -1,0 +1,53 @@
+.taskResults {
+    width: 30%;
+    flex-direction: column;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.tasksSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;    
+    border: 1px solid gainsboro;
+
+}
+
+.img {
+    padding: 3px;
+    cursor: pointer;
+    margin-left: 2px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 30px;
+}
+
+
+.edit,
+.trash {
+    padding: 3px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.select {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1100px) {
+    .taskResults {
+        width: 50%;
+    }
+}
+
+
+@media screen  and (max-width: 768px) {
+    .taskResults {
+        width: 70%;
+    }   
+}
