@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react';
+import { fetchPokemon } from '../api/api';
 
-const PokemonCard = () => {
+const PokemonCard = ({id}) => {
     const [pokemonData, setPokemonData] = useState({});
     const [loading, setLoading] = useState(true);
 
+    useEffect(() => {
+        fetchPokemon(id)
+    }, [id]);
+
     return (
         <div>PokemonCard</div>
+
     )
 }
 
